@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>APi PROJ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+        <style>
+            *{
+                padding:5px;
+                margin:0;
+            }
+            #map{
+                width:40vw;
+                height:100vh;
+            }
+            #chart_div{
+                padding-left: 20%;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class="row">
+                <div class="col">
+                    <h1>CORANA WEBSITE</h1>
+                    <p>WE GIVE LIVE UPDATES ON CORONA NEWS AND CASES </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <button class="b1-global">GET GLOBAL CASES</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id='map' ></div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="chart_div"></div>
+                </div>
+            </div>
+        </div>
+        
+
+<!--MAPS-->
+ <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZ291dGhhbWdyIiwiYSI6ImNrYjljNDV0bDA4dG4ycW5sZWVocGpubHEifQ.uUKNpzzoTQIS6EGWg62UfA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:2.5,
+    center:[0,20]
+  });
+</script>
+
+<!--MAPS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="apiFunc.js"></script>       
+<script src="app.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!--pieChartScript-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
