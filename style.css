@@ -5,14 +5,18 @@
     font-family: 'Varela Round', sans-serif;
     color:black
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
 }
      
 #container {
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
     margin: 0;
     padding: 0;
     }
@@ -80,12 +84,19 @@ a, a:hover, a:focus, a:active {
      height: 100vh;
  }
  /*////////////////////////////////////// MAP2////////////////////////////////////////////////// */
- #symptoms{
-    width: 100vw;
-    height: 100vh;
+ #symptoms {
+  
     margin: 0;
     padding: 0;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(126, 125, 125);
     color: blanchedalmond;
     
     }
+ /*////////////////////////////////////// MAP2////////////////////////////////////////////////// */
+ #innerProtection{
+    background-color:#ffffff
+ }
+ #innerProtection h5{
+
+    color: rgb(0, 0, 0) !important;
+ }

@@ -122,7 +122,7 @@ anychart.onDocumentReady(function () {
     series_1.selected().stroke("rgb(150,33,31)", 4);
 
     // set the chart title
-    chart.title(" Choropleth Map FOR COVID-19 Global Cases(Up to JUNE )");
+    chart.title("Global Cases(Up to JUNE)");
     // color scale ranges
     ocs = anychart.scales.ordinalColor([
       { less: 999 },

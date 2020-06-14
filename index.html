@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>COVID-19</title>
+   
+    
+     <link rel="stylesheet" href="style.css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <title>COVID-19</title>
     <style>
       
   </style>
@@ -45,7 +47,7 @@
                       <a class="nav-link" href="#">case chart <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item pr-5">
-                      <a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#ABOUT">about<span class="sr-only">(current)</span></a>
                     </li>
                     
                   </ul>
@@ -59,8 +61,8 @@
 
         
          <div class="col-lg-12 col-md-12 col-12 order-lg-1 order-1">
-             <div class=" w-100 h-100 d-flex justify-content-center align-items-center text_st ">
-             <h1 class="text-uppercase text_st">let's stay safe and fight together against <br> <span class="d-flex justify-content-center justify-content-sm-right text_st">c<span class="coronaImg"><img src="img/corona.png" alt=""></span>rana virus</span></h1>
+             <div class=" w-100 h-100 d-flex justify-content-center align-items-center text_st text-left ">
+             <h1 class="text-uppercase text_st">let's stay safe and fight together against <br> <span class="d-flex justify-content-center  text_st">c<span class="coronaImg"><img src="img/corona.png" alt=""></span>rana virus</span></h1>
             </div>
          </div>
      </div>
@@ -70,6 +72,9 @@
 </section>
 
 <section id="map2">
+  <div class="text-center mb-5 mt-4 pt-5">
+    <h1> Choropleth Map For COVID-19</h1>
+  </div>
   <div class="row">
     <div class="col  w-100 h-100 d-flex justify-content-center align-items-center">           
      <div id="container"> </div>
@@ -88,28 +93,120 @@
 
 </section>
 
+<!--ABOUT SECTION-->
+<section id="ABOUT">
+  <section id="aboutVirus" class="mb-5 pb-5">
+    <div class="text-left mb-5 mt-4 pt-5 pl-5">
+      <h1 style="color: rgb(0, 0, 0); font-size: 3.5em ;">About</h1>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12">
+        <figure class="text-center">
+          <img src="img/covid.png" alt="cough" class="img-fluid" width="500" height="500" style=" border-radius: 5%">
+        </figure>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+          <h3>COVID-19</h3>
+         <p class="text-left pr-5 mr-5">Coronavirus disease 2019 (COVID-19) is an infectious 
+           disease caused by severe acute respiratory syndrome coronavirus 2 
+           (SARS-CoV-2). It was first identified in December 2019 in Wuhan, 
+           China, and has resulted in an ongoing pandemic.The first case 
+           may be traced back to 17 November 2019. As of 14 June 2020, more than
+            7.78 million cases have been reported across 188 countries and territories, resulting in more than 430,000 deaths. More than 3.7 million people have recovered.
+          </p>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Coronavirus_disease_2019" target="_blank">Read more about covid-19</a></li>
+            <li><a href="#symptoms">Symptoms Of Virus </a></li>
+            <li><a href="#protect">Protection From Virus</a></li>
+          </ul>
+    
+      </div>
+    </div>
+
+  </section>
 <section id="symptoms" >
   <div class="text-center mb-5 mt-4 pt-5">
-    <h1>Symptoms</h1>
+    <h1 style="color: rgb(255, 255, 255);">Symptoms</h1>
+  </div>
+  <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure  class="text-center">
+              <img src="img/cough.png" alt="cough" class="img-fluid" width="120" height="120">
+              <figcaption>Cough</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 ">
+            <figure class="text-center">
+              <img src="img/diarrhea.svg" alt="diarrhea" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+              <figcaption>Diarrhea</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center">
+              <img src="img/fever.png" alt="fever" class="img-fluid" width="120" height="120">
+              <figcaption>Fever</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row pt-2 mt-2">
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center">
+              <img src="img/breathing difficulty.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+              <figcaption>Shortness of breath</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center">
+              <img src="img/headache.svg" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%" >
+              <figcaption>Headache</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center">
+              <img src="img/neckpain.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%";>
+              <figcaption>Muscle Aches</figcaption>
+            </figure>
+          </div>
+        </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12 pt-5">
+        <figure class="text-center ">
+          <img src="img/help.png" alt="" class="img-fluid " width="120" height="120" style=" border-radius: 50%";>
+          <figcaption> <a href="https://www.acko.com/health-insurance/coronavirus-helpline-india-official-phone-numbers-list/" style="color: rgb(46, 255, 81);">HELPLINE</a></figcaption>
+        </figure>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<section id="protect" >
+  <div class="text-center mb-5 mt-4 pt-5">
+    <h1 style="color: rgb(118, 172, 118);">WAYS TO PROTECT YOURSELF</h1>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-12">
         <figure  class="text-center">
-          <img src="img/cough.png" alt="cough" class="img-fluid" width="120" height="120">
-          <figcaption>Cough</figcaption>
+          <img src="img/handwashing.png" alt="cough" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+          <figcaption>Wash your hands frequently and thoroughly, using soap and water for at least 20 seconds. Use alcohol-based hand sanitizer if soap and water aren’t available.</figcaption>
         </figure>
       </div>
       <div class="col-lg-4 col-md-4 col-12 ">
         <figure class="text-center">
-          <img src="img/diarrhea.svg" alt="diarrhea" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
-          <figcaption>Diarrhea</figcaption>
+          <img src="img/sneezing tissue.png" alt="diarrhea" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+          <figcaption>Cough or sneeze into a tissue or flexed elbow, then throw the tissue in the trash.</figcaption>
         </figure>
       </div>
       <div class="col-lg-4 col-md-4 col-12">
         <figure class="text-center">
-          <img src="img/fever.png" alt="fever" class="img-fluid" width="120" height="120">
-          <figcaption>Fever</figcaption>
+          <img src="img/coughing hand.png" alt="fever" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+          <figcaption>Avoid touching your eyes, nose or mouth with unwashed hands.</figcaptior>
         </figure>
       </div>
     </div>
@@ -117,40 +214,49 @@
     <div class="row pt-2 mt-2">
       <div class="col-lg-4 col-md-4 col-12">
         <figure class="text-center">
-          <img src="img/breathing difficulty.png" alt="" class="img-fluid" width="120" height="120">
-          <figcaption>Shortness of breath</figcaption>
+          <img src="img/distance.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%">
+          <figcaption>Avoid close contact with people who are sick, sneezing or coughing.</figcaption>
         </figure>
       </div>
       <div class="col-lg-4 col-md-4 col-12">
         <figure class="text-center">
-          <img src="img/headache.svg" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%" >
-          <figcaption>Headache</figcaption>
+          <img src="img/sleeping at home.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%" >
+          <figcaption>Stay home when you are ill.</figcaption>
         </figure>
       </div>
       <div class="col-lg-4 col-md-4 col-12">
         <figure class="text-center">
-          <img src="img/neckpain.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%";>
-          <figcaption>Muscle Aches</figcaption>
+          <img src="img/disinfect.png" alt="" class="img-fluid" width="120" height="120" style=" border-radius: 50%";>
+          <figcaption>Clean and disinfect surfaces and objects that people frequently touch.</figcaption>
         </figure>
       </div>
     </div>
   </div>
-
+<section id="innerProtection">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-12 pt-5">
-      <figure class="text-center ">
-        <img src="img/help.png" alt="" class="img-fluid " width="120" height="120" style=" border-radius: 50%";>
-        <figcaption> <a href="https://www.acko.com/health-insurance/coronavirus-helpline-india-official-phone-numbers-list/" style="color: rgb(0, 0, 0);">HELPLINE</a></figcaption>
+      <div class="text-center mb-5 mt-4 pt-5">
+        <h1 style="color:rgb(253, 65, 32);">If You Feel Sick</h1>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-12 text-center pl-5  d-flex justify-content-center">
+      <h5 class="mt-4 pt-4" style="line-height: 1.6;">Unless it is an emergency, to reduce your risk of catching or spreading illness, stay home if you feel sick, even if your symptoms are mild. Do not go to work, school or public places, and avoid public transportation. If your symptoms are severe or you feel like you need medical care, call before you go to a doctor’s office, urgent care center or emergency room. Describe your symptoms over the phone.
+      </h5>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <figure class="text-center pr-5 ">
+        <img src="img/sick.webp" alt="" class="img-fluid" width="300" height="300" >
       </figure>
     </div>
-    <div class="col-lg-6 col-md-6 col-12">
-
-    </div>
   </div>
-
-  </div>
-
 </section>
+</div>
+  </div>
+
+ </section>
+</section> <!--About section end here-->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="apiFunc.js"></script>       
